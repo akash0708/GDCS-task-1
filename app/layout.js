@@ -11,6 +11,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <script
+        src="https://cdn.jsdelivr.net/npm/add-to-calendar-button@2"
+        async
+        defer
+      ></script>
       <body className={inter.className}>{children}</body>
     </html>
   );

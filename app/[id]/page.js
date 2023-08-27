@@ -23,6 +23,8 @@ const page = async ({ params }) => {
 
   // ------------------- Date conversion -------------------
   let eventDate = new Date(cardData.date_time);
+  console.log(eventDate);
+  console.log(eventDate.toUTCString());
 
   return (
     <>
@@ -58,9 +60,25 @@ const page = async ({ params }) => {
             <p className="relative sm:text-4xl text-3xl text-[#61677A] font-Poppins mb-6 font-semibold">
               Date and Time
             </p>
-            <p className="relative pb-12 font-Poppins text-[#6B728E]">
+
+            <p className="relative font-Poppins text-[#6B728E]">
               {eventDate.toLocaleString()}
             </p>
+            <div className="relative pt-2 pb-6 sm:left-0 left-[14%]">
+              <AddToCalendarButton
+                name={cardData.title}
+                startDate={eventDate.toJSON().slice(0, 10)}
+                startTime="10:15"
+                endTime="23:30"
+                timeZone="America/Los_Angeles"
+                description="Check out the maybe easiest way to include Add to Calendar Buttons to your web projects:[br]→ [url]https://add-to-calendar-button.com/"
+                options="'Apple','Google','iCal'"
+                buttonsList
+                hideTextLabelButton
+                buttonStyle="round"
+                lightMode="bodyScheme"
+              ></AddToCalendarButton>
+            </div>
             <p className="relative sm:text-4xl text-3xl text-[#61677A] font-Poppins mb-6 font-semibold">
               Venue
             </p>
