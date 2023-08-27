@@ -25,7 +25,7 @@ export default async function Page() {
   return (
     <>
       <Navbar />
-      <main className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-4/5 mx-auto">
+      <main className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-4/5 mx-auto pt-20">
         {card.map((current) => {
           return (
             <div className="relative text-center my-12 mx-auto w-72 sm:w-96 h-[34rem] pb-4 bg-[#F6F1E9] rounded-2xl overflow-hidden">
