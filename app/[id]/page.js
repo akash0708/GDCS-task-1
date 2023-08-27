@@ -31,7 +31,7 @@ const page = async ({ params }) => {
       <Navbar />
       <div className="w-full h-fit">
         <div className="relative bg-blue-900 w-full h-96 mx-auto text-center"></div>
-        <div className="container sm:w-2/3 w-4/5 h-fit relative mx-auto pb-6 sm:-top-48 -top-60 rounded-3xl overflow-hidden bg-white border-2">
+        <div className="container sm:w-2/3 w-4/5 h-fit relative mx-auto pb-6 sm:-top-48 -top-48 rounded-3xl overflow-hidden bg-white border-2">
           <div className="image_box relative w-full h-64 sm:h-fit mx-auto">
             <img
               src={cardData.banner_image}
