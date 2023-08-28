@@ -41,10 +41,10 @@ export default async function Page() {
                   alt=""
                 />
               </div>
-              <div className="relative w-full h-3/5">
+              <div className="relative w-full h-3/5 overflow-hidden">
                 <img
                   src={current.banner_image}
-                  className="relative w-full h-full"
+                  className="relative w-full h-full hover:scale-110 duration-300"
                   alt="banner_image"
                 />
               </div>
