@@ -13,7 +13,7 @@ React, Next, TailwindCSS
 
 #### API used to fetch data
 
-```http
+```https
   https://gdscdev.vercel.app/api
 ```
 
