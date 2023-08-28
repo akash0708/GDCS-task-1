@@ -3,6 +3,9 @@
 
 Conferenze is your one-stop solution to conference hunting on the internet.
 
+## The website is live at
+[https://conferenze.vercel.app](https://conferenze.vercel.app)
+
 
 ## Tech Stack
 
