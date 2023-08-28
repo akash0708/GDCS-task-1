@@ -30,10 +30,10 @@ export default async function Page() {
         type="text"
         placeholder="Search..."
       /> */}
-      <main className="grid grid-cols-1 sm:grid-cols-3 gap-6 w-4/5 mx-auto pt-20">
+      <main className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 w-4/5 mx-auto pt-20">
         {card.map((current) => {
           return (
-            <div className="relative text-center mt-12 mb-8 mx-auto w-72 sm:w-96 h-[34rem] pb-4 bg-[#F6F1E9] rounded-2xl overflow-hidden">
+            <div className="relative text-center mt-12 mb-8 mx-auto w-72 lg:w-96 md:w-80 h-[34rem] pb-4 bg-[#F6F1E9] rounded-2xl overflow-hidden">
               <div className="absolute flex justify-center items-center top-1/2 sm:left-[40%] left-1/3 w-24 h-24 bg-white z-10 rounded-full">
                 <img
                   src={current.organiser_icon}
