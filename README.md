@@ -35,7 +35,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd GDSC-task-1
+    cd ./GDSC-task-1/
 ```
 
 Install dependencies
