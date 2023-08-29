@@ -9,7 +9,7 @@ Conferenze is your one-stop solution to conference hunting on the internet.
 
 ## Tech Stack
 
-React, Next, TailwindCSS
+React, Next, TailwindCSS, Framer Motion
 
 
 ## API Reference
