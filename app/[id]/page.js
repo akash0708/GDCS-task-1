@@ -11,8 +11,8 @@ const page = async ({ params }) => {
 
   // ------------------- Date conversion -------------------
   let eventDate = new Date(cardData.date_time);
-  console.log(eventDate);
-  console.log(eventDate.toUTCString());
+  // console.log(eventDate.toJSON());
+  // console.log(eventDate.toJSON().slice(11, 16));
 
   return (
     <>
@@ -57,9 +57,15 @@ const page = async ({ params }) => {
                 <AddToCalendarButton
                   name={cardData.title}
                   startDate={eventDate.toJSON().slice(0, 10)}
-                  startTime="10:15"
-                  endTime="23:30"
-                  timeZone="America/Los_Angeles"
+                  startTime={eventDate.toJSON().slice(11, 16)}
+                  endTime={
+                    (
+                      Number.parseInt(eventDate.toJSON().slice(11, 16)) + 1
+                    ).toString() +
+                    ":" +
+                    eventDate.toJSON().slice(14, 16)
+                  }
+                  timeZone="UTC"
                   description="Check out the maybe easiest way to include Add to Calendar Buttons to your web projects:[br]→ [url]https://add-to-calendar-button.com/"
                   options="'Apple','Google','iCal'"
                   buttonsList
