@@ -9,7 +9,7 @@ const Feed = async () => {
   return (
     <>
       <Pagewrapper>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 w-4/5 mx-auto pt-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-2 w-full mx-auto pt-20 px-4">
           {card.map((current) => {
             return (
               <Card
